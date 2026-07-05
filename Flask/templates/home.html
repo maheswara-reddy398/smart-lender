@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Smart Lender</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>SMART LENDER</h1>
+
+    <h2>Loan Approval Prediction System</h2>
+
+    <p>
+        Predict whether your loan application will be approved using Machine Learning.
+    </p>
+
+    <a href="{{ url_for('predict') }}">
+        <button>Start Prediction</button>
+    </a>
+
+</div>
+
+</body>
+</html>
