@@ -1,119 +1,133 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-
-<title>Loan Prediction</title>
-
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
+    <title>Loan Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Loan Prediction Form</h1>
+    <h1>Loan Prediction Form</h1>
 
-<form method="POST">
+    <form method="POST">
 
-<label>Gender</label><br>
+        <label>Gender</label><br>
+        <select name="Gender" required>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
 
-<select name="Gender">
-<option value="1">Male</option>
-<option value="0">Female</option>
-</select>
+        <br><br>
 
-<br><br>
+        <label>Married</label><br>
+        <select name="Married" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
 
-<label>Married</label><br>
+        <br><br>
 
-<select name="Married">
-<option value="1">Yes</option>
-<option value="0">No</option>
-</select>
+        <label>Dependents</label><br>
+        <select name="Dependents" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3+</option>
+        </select>
 
-<br><br>
+        <br><br>
 
-<label>Dependents</label><br>
+        <label>Education</label><br>
+        <select name="Education" required>
+            <option value="0">Graduate</option>
+            <option value="1">Not Graduate</option>
+        </select>
 
-<select name="Dependents">
-<option value="0">0</option>
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3+</option>
-</select>
+        <br><br>
 
-<br><br>
+        <label>Self Employed</label><br>
+        <select name="Self_Employed" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
 
-<label>Education</label><br>
+        <br><br>
 
-<select name="Education">
-<option value="0">Graduate</option>
-<option value="1">Not Graduate</option>
-</select>
+        <label>Applicant Income (₹ / Month)</label><br>
+        <input
+            type="number"
+            name="ApplicantIncome"
+            placeholder="Example: 50000"
+            min="0"
+            required>
 
-<br><br>
+        <br><br>
 
-<label>Self Employed</label><br>
+        <label>Coapplicant Income (₹ / Month)</label><br>
+        <input
+            type="number"
+            name="CoapplicantIncome"
+            placeholder="Example: 20000"
+            min="0"
+            required>
 
-<select name="Self_Employed">
-<option value="1">Yes</option>
-<option value="0">No</option>
-</select>
+        <br><br>
 
-<br><br>
+        <label>Loan Amount (₹ Thousands)</label><br>
+        <input
+            type="number"
+            name="LoanAmount"
+            placeholder="Example: 128"
+            min="1"
+            required>
 
-<label>Applicant Income</label><br>
+        <br><br>
 
-<input type="number" name="ApplicantIncome" required>
+        <label>Loan Term (Months)</label><br>
+        <input
+            type="number"
+            name="Loan_Amount_Term"
+            placeholder="Example: 360"
+            min="12"
+            step="12"
+            required>
 
-<br><br>
+        <br><br>
 
-<label>Coapplicant Income</label><br>
+        <label>Credit History</label><br>
+        <select name="Credit_History" required>
+            <option value="1">Good </option>
+            <option value="0">Bad </option>
+        </select>
 
-<input type="number" name="CoapplicantIncome" required>
+        <br><br>
 
-<br><br>
+        <label>Property Area</label><br>
+        <select name="Property_Area" required>
+            <option value="2">Urban</option>
+            <option value="1">Semiurban</option>
+            <option value="0">Rural</option>
+        </select>
 
-<label>Loan Amount</label><br>
+        <br><br>
 
-<input type="number" name="LoanAmount" required>
+        <div class="note">
+            <strong>Note:</strong>
+            <ul>
+                <li>Enter Applicant and Coapplicant Income as <b>monthly income in Indian Rupees (₹)</b>.</li>
+                <li>Enter Loan Amount in <b>thousands of rupees</b> (Example: 128 = ₹1.28 lakh).</li>
+                <li>Enter Loan Term in <b>months</b> (Example: 360 = 30 years).</li>
+            </ul>
+        </div>
 
-<br><br>
+        <button type="submit">Predict</button>
 
-<label>Loan Amount Term</label><br>
-
-<input type="number" name="Loan_Amount_Term" required>
-
-<br><br>
-
-<label>Credit History</label><br>
-
-<select name="Credit_History">
-<option value="1">Good</option>
-<option value="0">Bad</option>
-</select>
-
-<br><br>
-
-<label>Property Area</label><br>
-
-<select name="Property_Area">
-<option value="2">Urban</option>
-<option value="1">Semiurban</option>
-<option value="0">Rural</option>
-</select>
-
-<br><br>
-
-<button type="submit">Predict</button>
-
-</form>
+    </form>
 
 </div>
 
 </body>
-
 </html>
