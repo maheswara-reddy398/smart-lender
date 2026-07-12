@@ -78,7 +78,7 @@ http://127.0.0.1:5000
 
 ##  Devoleped by
 
-Pidathala Venkata Uma maheswara Reddy
-Shaik Abdur Rehaman
-Seerapu Sumanth Reddy
-Rajesh Vinukonda
+**Pidathala Venkata Uma maheswara Reddy**
+**Shaik Abdur Rehaman**
+**Seerapu Sumanth Reddy**
+**Rajesh Vinukonda**
