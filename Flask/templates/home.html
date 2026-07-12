@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Smart Lender</title>
 
@@ -10,21 +15,52 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <h1>SMART LENDER</h1>
+        <h1>Smart Lender</h1>
 
-    <h2>Loan Approval Prediction System</h2>
+        <p class="subtitle">
+            AI Loan Eligibility Prediction System
+        </p>
 
-    <p>
-        Predict whether your loan application will be approved using Machine Learning.
-    </p>
+        <hr>
 
-    <a href="{{ url_for('predict') }}">
-        <button>Start Prediction</button>
-    </a>
+        <br>
 
-</div>
+        <p style="text-align:center; font-size:18px; color:#555; line-height:1.8;">
+
+            Welcome to <strong>Smart Lender</strong>.
+
+            <br><br>
+
+            This application predicts whether a loan application is likely to be
+            approved using a Machine Learning model trained on historical loan
+            application data.
+
+            <br><br>
+
+            Fill in the applicant details and receive an instant prediction.
+
+        </p>
+
+        <br><br>
+
+        <div style="text-align:center;">
+
+            <a href="{{ url_for('predict') }}">
+
+                <button style="width:250px;">
+
+                    Get Started
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
 
 </body>
+
 </html>
