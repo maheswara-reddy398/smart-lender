@@ -76,6 +76,9 @@ http://127.0.0.1:5000
 
 ---
 
-## Author
+##  Devoleped by
 
 Pidathala Venkata Uma maheswara Reddy
+Shaik Abdur Rehaman
+Seerapu Sumanth Reddy
+Rajesh Vinukonda
